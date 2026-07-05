@@ -14,18 +14,21 @@ import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
 import User from "./pages/User.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="Home" element={<Home />} />
-      <Route path="About" element={<About />} />
-      <Route path="Projects" element={<Projects />} />
-      <Route path="Contact" element={<Contact />} />
+      <Route path="" element={<Home />} />
+      <Route path="home" element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="projects" element={<Projects />} />
+      <Route path="contact" element={<Contact />} />
       <Route path="user/" element={<User />}>
         {/* Dynamic parameter */}
         <Route path=":username" element={<User />} />
       </Route>
+      <Route path="*" element={<NotFound />} />
     </Route>,
   ),
 );
