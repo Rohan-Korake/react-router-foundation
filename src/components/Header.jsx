@@ -26,7 +26,7 @@ function Header() {
           <img
             src={logo}
             alt="React Logo"
-            className="h-11 w-11 transition-transform duration-300 hover:rotate-12"
+            className="h-11 w-11 transition-transform duration-300 "
           />
 
           <h1 className="text-xl font-bold tracking-tight text-white">
