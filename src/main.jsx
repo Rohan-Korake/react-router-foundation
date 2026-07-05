@@ -10,11 +10,13 @@ import {
 } from "react-router-dom";
 import Layout from "./layout.jsx";
 import Home from "./components/Home.jsx";
+import About from "./components/About.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="Home" element={<Home />} />
+      <Route path="About" element={<About />} />
     </Route>,
   ),
 );
