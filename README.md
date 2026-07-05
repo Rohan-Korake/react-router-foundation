@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React Logo" width="120"/>
+<img src="./src/assets/react.svg" alt="React Logo" width="120"/>
 
 # React Router Foundation
 
