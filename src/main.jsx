@@ -13,6 +13,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
+import User from "./pages/User.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +22,10 @@ const router = createBrowserRouter(
       <Route path="About" element={<About />} />
       <Route path="Projects" element={<Projects />} />
       <Route path="Contact" element={<Contact />} />
+      <Route path="user/" element={<User />}>
+        {/* Dynamic parameter */}
+        <Route path=":username" element={<User />} />
+      </Route>
     </Route>,
   ),
 );
