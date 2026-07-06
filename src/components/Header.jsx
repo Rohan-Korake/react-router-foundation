@@ -9,6 +9,7 @@ const navLinks = [
   { name: "Projects", path: "/projects" },
   { name: "Contact", path: "/contact" },
   { name: "User", path: "/user" },
+  { name: "GtiHub", path: "/github" },
 ];
 
 function Header() {

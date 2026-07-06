@@ -15,6 +15,7 @@ import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
 import User from "./pages/User.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import GitHub, { fetchGitData } from "./pages/GitHub.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +29,8 @@ const router = createBrowserRouter(
         {/* Dynamic parameter */}
         <Route path=":username" element={<User />} />
       </Route>
+      {/* provide the function "fetchGitData" to use advance preprocessing */}
+      <Route loader={fetchGitData} path="github" element={<GitHub />} />
       <Route path="*" element={<NotFound />} />
     </Route>,
   ),
